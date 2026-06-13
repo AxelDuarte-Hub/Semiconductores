@@ -1,14 +1,14 @@
 # Tiny Tapeout project information
 project:
   title:        "Detector de Secuencia 11010"      # Project title
-  author:       "José Abdiel Lopez Valdez y Axel Duarte Salgado"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "FSM que detecta el patron 11010"      # One line description of what your project does
-  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  author:       "José Abdiel Lopez Valdez y Axel Duarte Salgado"      # Your name[cite: 1]
+  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)[cite: 1]
+  description:  "FSM que detecta el patron 11010"      # One line description of what your project does[cite: 1]
+  language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc[cite: 1]
+  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)[cite: 1]
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2[cite: 1]
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
   top_module:  "tt_um_example"
@@ -17,40 +17,43 @@ project:
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
-    - "project.v"
+    - "project.v"[cite: 1]
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "sequence_in"
-  ui[1]: ""[cite: 1]
-  ui[2]: ""[cite: 1]
-  ui[3]: ""[cite: 1]
-  ui[4]: ""[cite: 1]
-  ui[5]: ""[cite: 1]
-  ui[6]: ""[cite: 1]
-  ui[7]: ""[cite: 1]
+  ui:
+    - "sequence_in"     # ui[0][cite: 1]
+    - ""                # ui[1][cite: 1]
+    - ""                # ui[2][cite: 1]
+    - ""                # ui[3][cite: 1]
+    - ""                # ui[4][cite: 1]
+    - ""                # ui[5][cite: 1]
+    - ""                # ui[6][cite: 1]
+    - ""                # ui[7][cite: 1]
 
   # Outputs
-  uo[0]: "match_sequence"
-  uo[1]: ""[cite: 1]
-  uo[2]: ""[cite: 1]
-  uo[3]: ""[cite: 1]
-  uo[4]: ""[cite: 1]
-  uo[5]: ""[cite: 1]
-  uo[6]: ""[cite: 1]
-  uo[7]: ""[cite: 1]
+  uo:
+    - "match_sequence"    # uo[0][cite: 1]
+    - ""                # uo[1][cite: 1]
+    - ""                # uo[2][cite: 1]
+    - ""                # uo[3][cite: 1]
+    - ""                # uo[4][cite: 1]
+    - ""                # uo[5][cite: 1]
+    - ""                # uo[6][cite: 1]
+    - ""                # uo[7][cite: 1]
 
   # Bidirectional pins
-  uio[0]: ""[cite: 1]
-  uio[1]: ""[cite: 1]
-  uio[2]: ""[cite: 1]
-  uio[3]: ""[cite: 1]
-  uio[4]: ""[cite: 1]
-  uio[5]: ""[cite: 1]
-  uio[6]: ""[cite: 1]
-  uio[7]: ""[cite: 1]
+  uio:
+    - ""                # uio[0][cite: 1]
+    - ""                # uio[1][cite: 1]
+    - ""                # uio[2][cite: 1]
+    - ""                # uio[3][cite: 1]
+    - ""                # uio[4][cite: 1]
+    - ""                # uio[5][cite: 1]
+    - ""                # uio[6][cite: 1]
+    - ""                # uio[7][cite: 1]
 
 # Do not change!
 yaml_version: 6[cite: 1]
